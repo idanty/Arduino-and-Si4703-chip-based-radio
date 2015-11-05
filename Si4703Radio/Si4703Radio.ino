@@ -219,8 +219,7 @@ void DisplayStation(int station)
 		// Print station name
         lcd.setCursor(0, 1);
         
-        if (station == 880) lcd.print("Radio 88FM");
-        else if (station == 1048) lcd.print("Reshet Alef");
+        if (station == 1048) lcd.print("Reshet Alef");
         else if (station == 95 ) lcd.print("Reshet Bet");
         else if (station == 897) lcd.print("Reshet Gimel");
         else if (station == 972) lcd.print("Kol Hamusica");
