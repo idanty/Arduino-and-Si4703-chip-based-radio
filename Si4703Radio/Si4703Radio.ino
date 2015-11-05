@@ -72,6 +72,7 @@ void loop() {
 	{
 	        irrecv.resume();
 
+		// Remote control input
 		switch (irInput.value)
 		{
 		case Zero:
