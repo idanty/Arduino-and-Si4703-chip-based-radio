@@ -137,7 +137,7 @@ void loop() {
             if (!isOn) 
                 break;
                     
-            lcdLedIntesity +=25;
+            lcdLedIntesity +=26;
 
             if (lcdLedIntesity > 255) lcdLedIntesity = 255;
 
@@ -147,7 +147,7 @@ void loop() {
             if (!isOn) 
                 break;
                     
-            lcdLedIntesity -=25;
+            lcdLedIntesity -=26;
 
             if (lcdLedIntesity < 0) lcdLedIntesity = 0;
 
