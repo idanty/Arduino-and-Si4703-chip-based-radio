@@ -28,6 +28,7 @@ enum RemoteKeys
 	Nine = 0xFD58A7
 };
 
+int LEDIntensityJump = 26;
 int resetPin = 2;
 int SDIO = A4;
 int SCLK = A5;
@@ -137,7 +138,7 @@ void loop() {
             if (!isOn) 
                 break;
                     
-            lcdLedIntesity +=26;
+            lcdLedIntesity +=LEDIntensityJump;
 
             if (lcdLedIntesity > 255) lcdLedIntesity = 255;
 
@@ -147,7 +148,7 @@ void loop() {
             if (!isOn) 
                 break;
                     
-            lcdLedIntesity -=26;
+            lcdLedIntesity -=LEDIntensityJump;
 
             if (lcdLedIntesity < 0) lcdLedIntesity = 0;
 
